@@ -1,0 +1,251 @@
+body {
+  color: black;
+  background-color: white;
+  margin: 0;
+  font-family: 'OpenSans', sans-serif;
+  font-size: 100%; }
+
+#content {
+  padding: 0.5em;
+  max-width: 105em;
+  margin: auto; }
+
+button {
+  padding: 0.5em 2em;
+  border: none;
+  border-radius: 0.25em;
+  color: white;
+  background-color: #56B5DB;
+  text-transform: uppercase;
+  font: inherit;
+  font-weight: bold; }
+
+a {
+  color: #008ACA;
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: underline; }
+
+.inputDiv {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: stretch;
+  width: 25em;
+  margin: 0 1em 1.25em 0;
+  padding: 0;
+  background-color: white;
+  border-style: solid;
+  border-width: 0 0 0.3em 0;
+  border-color: #EFEFEF; }
+
+input {
+  width: 100%;
+  min-width: 5em;
+  border: none;
+  padding: 0.5em;
+  background-color: inherit;
+  font: inherit;
+  text-overflow: ellipsis; }
+
+input:focus {
+  outline: 0; }
+
+.key {
+  margin: 0;
+  padding: 0.5em;
+  font-weight: bold;
+  background-color: #EFEFEF; }
+
+.inputDiv button {
+  background-color: transparent;
+  color: inherit;
+  width: auto;
+  height: auto;
+  padding: 0.5em 0.5em 0.5em 0;
+  margin: 0;
+  font: inherit;
+  font-weight: bold;
+  color: #008ACA;
+  text-transform: uppercase; }
+
+.inputDiv button:disabled {
+  color: #DEDEDE; }
+
+#header {
+  width: 100%;
+  background: #FFF;
+  height: 6em;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  border-bottom: solid 0.15em #F5F5F5; }
+
+#back {
+  padding: 0; }
+
+#logo {
+  width: 23em;
+  height: auto;
+  margin: 1.2em 0 0 1.6em; }
+
+#picto {
+  float: left;
+  height: 3ex;
+  width: 3ex;
+  margin: 0;
+  padding-top: 2.4em; }
+
+#doc {
+  float: left;
+  padding: 2.1em 1.6em 0 1em;
+  border-top: solid 0.4em #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #353535; }
+
+#doc:hover {
+  border-top: solid 0.4em #56B5DB;
+  color: #353535; }
+
+li {
+  list-style: none; }
+
+#urlheader {
+  margin: 1.6em; }
+
+@media screen and (max-width: 62em) {
+  #urlheader {
+    display: none; } }
+
+@media screen and (max-width: 33.438em) {
+  #header {
+    flex-direction: column;
+    height: auto; }
+  #logo {
+    float: left;
+    margin: 0 0 0 1em;
+    width: 15em; }
+  #picto {
+    height: 2.5ex;
+    width: 2.5ex;
+    margin: 0 auto;
+    padding: 0.05em 0.2em 0 1.3em; }
+  #doc {
+    padding: 0em 1em 0.5em 1em;
+    margin: 0 auto;
+    border-bottom: solid 0.2em #ffffff;
+    border-top: none; }
+  #doc:hover {
+    border-bottom: solid 0.2em #56B5DB;
+    border-top: none; } }
+
+#raw {
+  display: flex;
+  width: 100%;
+  flex-flow: row wrap;
+  overflow: auto;
+  padding-bottom: 180px; }
+
+.col {
+  display: flex;
+  width: 65%;
+  flex-flow: row wrap;
+  background: #F5F5F5;
+  padding: 0 0 3em 0; }
+
+#krakensuperhero {
+  display: flex;
+  flex-flow: row;
+  margin: 0 auto;
+  width: 21.875em;
+  height: 11.813em;
+  padding: 2em 0 1em 0; }
+
+.col > h2 {
+  width: 100%; }
+
+h2 {
+  width: auto;
+  font-weight: normal;
+  color: #353535;
+  text-align: center;
+  margin: 0;
+  padding: 2em 0; }
+
+h3 {
+  font-weight: normal;
+  font-size: 100%;
+  padding: 0;
+  text-align: center; }
+
+.pictofeatures {
+  height: 4em;
+  width: 4em; }
+
+.rubriques {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1em 1em 1em;
+  margin: 0 auto;
+  width: 20em; }
+  .rubriques a::before {
+    float: right;
+    content: ">"; }
+
+a {
+  display: list-item;
+  list-style-type: none;
+  font-family: 'OpenSans', sans-serif;
+  text-decoration: none;
+  text-align: left;
+  padding: 0.5em 1em 0.5em 2em;
+  margin: 0;
+  color: #4e4e4e; }
+
+a:hover {
+  color: #56B5DB; }
+
+/* ---------------------------------
+PRO
+--------------------------------- */
+#urlForm {
+  width: 35%;
+  background: #FFF;
+  padding-bottom: 2em; }
+
+#urlForm form {
+  text-align: center;
+  padding: 1em 0;
+  margin: 0; }
+
+#urlinput {
+  width: 100%; }
+
+#urlDiv.inputDiv {
+  margin: 1.2em 2.5em;
+  width: auto; }
+
+#or {
+  display: flex;
+  flex-flow: row;
+  margin: 0 auto; }
+
+#start_playground {
+  width: 100%;
+  margin: 0 auto; }
+
+#ou {
+  text-align: center; }
+
+button {
+  margin: 0 auto; }
+
+/* ---------------------------------
+RESPONSIVE
+--------------------------------- */
+@media screen and (max-width: 64em) {
+  .col, #urlForm {
+    width: 100%; } }
